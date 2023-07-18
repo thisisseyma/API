@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Bodoni, sans-serif;
+  background: #dde0ab;
+}
+
+header {
+  background-color: #141010;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+  background-size: cover;
+  font-family: Bodoni;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-container, .paragraph, .random-button {
+  margin: 10px;
+}
+
+#searchButton,#randomButton, #recipeFinderBtn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #191c1f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container, .random-button {
+  padding-top: 100px;
+}
+
+#ingredientInput {
+  margin-top: 10px;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #191c1f;
+  border: none;
+}
+
+#recipeContainer {
+  margin-top: 50px;
+}
+
+h2 {
+  color: #333;
+}
+
+#resultsContainer {
+  width: 70%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.instructionsList {
+  text-align: justify;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+img {
+  width: auto;
+  height: auto;
+  margin-right: 10px;
+  padding-bottom: 20px;
+}
+
+.resultBoxes img:hover {
+  transform: scale(1.15);
+}
+
+.welcomeParagraph {
+  width: 500px;
+  text-align: center;
+  line-height: 1.6;
+  font-size: x-large;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-style: italic;
+}
+
+.resultBox {
+  width: 300px;
+  text-align: center;
+  margin: 10px;
+}
+
+.resultBoxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.resultLink {
+  text-decoration: none;
+  color: #371717;
+}
+
+.displayImg {
+  width: 500px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  max-width: 100%;
+}
+
+.recipeSum {
+  text-align: justify;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.ingredients, .instructions {
+  border-top: 2px solid black;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.servings {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.recipeTitle {
+  padding-bottom: 20px;
+}
+
+.recipeSum a {
+  text-decoration: none;
+  cursor: default;
+  color: black;
+}
+
+@media screen and (max-width: 700px) {
+  .displayImg {
+    max-width: 80%;
+  }
+
+  .welcomeParagraph {
+    max-width: 250px;
+  }
+}
